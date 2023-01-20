@@ -61,6 +61,7 @@ h2 {
     border-radius: 4px;
     box-shadow: 0 0 10px white;
     font-weight: bold;
+    text-align: center;
 }
 
 .link-list li a span {
