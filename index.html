@@ -1,84 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Cryslian</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css">
-    
-</head>
-<body class="back-img">
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <main>
-        <div class="profile">
-            <img src="./assets/profile-img.png" alt="" class="avatar">
-            <h1>Gabriel Cryslian</h1>
-            <h2>Educação Musical & Produção</h2>
+      <div class="profile">
+        <img src="./assets/profile-img.png" alt="" class="avatar" />
+        <h1>Gabriel Cryslian</h1>
+        <h2>Educação Musical & Produção</h2>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.youtube.com/@GabrielCryslian">
+            <img src="./assets/youtube-new.png" alt="youtube" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/whatsapp-new.png" alt="whatsapp" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/gabrielcryslian/">
+            <img src="./assets/instagram-new.png" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@gabrielcryslian_">
+            <img src="./assets/tiktok-new.png" alt="tiktok" />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="link-list">
+        <li>
+          <a href="">
+            Agende a sua aula
+            <span>Aulas presenciais e online de instrumentos musicais</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mymusicsheet.com/gabrielcryslian">
+            Tabs e partituras
+            <span>Aprenda agora a tocar os meus arranjos</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@GabrielCryslian">
+            Meus vídeos no Youtube
+            <span>Acesse os meus vídeos completos</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@gabrielcryslian_">
+            Meus vídeos no TikTok
+            <span>Vídeos com mais de 300k de visualizações</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Lista VIP - Whatsapp
+            <span>Para quem quer evoluir rápido</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Share button in the application -->
+      <div class="container">
+        <button class="share-btn">
+          <i class="bi bi-share-fill"></i>
+        </button>
+        <div class="share-options">
+          <p class="title">Compartilhar</p>
+          <div class="social-media">
+            <button class="social-media-btn">
+              <i class="bi bi-whatsapp"></i>
+            </button>
+            <button class="social-media-btn">
+              <i class="bi bi-instagram"></i>
+            </button>
+            <button class="social-media-btn">
+              <i class="bi bi-twitter"></i>
+            </button>
+            <button class="social-media-btn">
+              <i class="bi bi-linkedin"></i>
+            </button>
+          </div>
         </div>
+      </div>
 
-        <ul class="social">
-            <li>
-                <a href="https://www.youtube.com/@GabrielCryslian">
-                    <img src="./assets/youtube-new.png" alt="youtube">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./assets/whatsapp-new.png" alt="whatsapp">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/gabrielcryslian/">
-                    <img src="./assets/instagram-new.png" alt="instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@gabrielcryslian_">
-                    <img src="./assets/tiktok-new.png" alt="tiktok">
-                </a>
-            </li>
-        </ul>
-
-        <ul class="link-list">
-            <li>
-                <a href="">
-                    Agende a sua aula
-                    <span>Aulas presenciais e online de instrumentos musicais</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mymusicsheet.com/gabrielcryslian">
-                    Tabs e partituras
-                    <span>Aprenda agora a tocar os meus arranjos</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@GabrielCryslian">
-                    Meus vídeos no Youtube
-                    <span>Acesse os meus vídeos completos</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@gabrielcryslian_">
-                    Meus vídeos no TikTok
-                    <span>Vídeos com mais de 300k de visualizações</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Lista VIP - Whatsapp
-                    <span>Para quem quer evoluir rápido</span>
-                </a>
-            </li>
-        </ul>
-        <footer>
-            <p>© MCode | 2023</p>
-        </footer>
+      <!-- Paypal button -->
+      <div id="smart-button-container">
+            <div class="paypalItems" style="text-align: center"><label for="description" style="color:#fff; font-weight: bold; margin-top: 2rem;">Envie me um cafézinho! 😉☕ </label><input type="text" name="descriptionInput" id="description" placeholder="Escreva uma mensagem" maxlength="127" value=""></div>
+            <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Por favor escreva uma mensagem</p>
+            <div class="paypalItems" style="text-align: center; margin-top: -0.5rem;"><label for="amount">🎸🎼🎵🎹🎤🎶🥁</label><input name="amountInput" type="number" id="amount" placeholder="Digite um valor" value="" ><span style="color:#fff; font-weight: bold;"></span></div>
+            <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Por favor insira um valor</p>
+            <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+            <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+            <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+      </div>
+     
     </main>
-    <Small></Small>
-</body>
+
+    <footer>
+        <p>© MCode | 2023</p>
+      </footer>
+
+    <script src="index.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Paypal script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>    
+
+    <script>
+        function initPayPalButton() {
+            var description = document.querySelector('#smart-button-container #description');
+            var amount = document.querySelector('#smart-button-container #amount');
+            var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+            var priceError = document.querySelector('#smart-button-container #priceLabelError');
+            var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+            var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+            var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+            var elArr = [description, amount];
+
+            if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+            invoiceidDiv.style.display = "block";
+            }
+
+            var purchase_units = [];
+            purchase_units[0] = {};
+            purchase_units[0].amount = {};
+
+            function validate(event) {
+            return event.value.length > 0;
+            }
+
+            paypal.Buttons({
+            style: {
+                color: 'gold',
+                shape: 'pill',
+                label: 'paypal',
+                layout: 'vertical',
+                
+            },
+
+            onInit: function (data, actions) {
+                actions.disable();
+
+                if(invoiceidDiv.style.display === "block") {
+                elArr.push(invoiceid);
+                }
+
+                elArr.forEach(function (item) {
+                item.addEventListener('keyup', function (event) {
+                    var result = elArr.every(validate);
+                    if (result) {
+                    actions.enable();
+                    } else {
+                    actions.disable();
+                    }
+                });
+                });
+            },
+
+            onClick: function () {
+                if (description.value.length < 1) {
+                descriptionError.style.visibility = "visible";
+                } else {
+                descriptionError.style.visibility = "hidden";
+                }
+
+                if (amount.value.length < 1) {
+                priceError.style.visibility = "visible";
+                } else {
+                priceError.style.visibility = "hidden";
+                }
+
+                if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+                invoiceidError.style.visibility = "visible";
+                } else {
+                invoiceidError.style.visibility = "hidden";
+                }
+
+                purchase_units[0].description = description.value;
+                purchase_units[0].amount.value = amount.value;
+
+                if(invoiceid.value !== '') {
+                purchase_units[0].invoice_id = invoiceid.value;
+                }
+            },
+
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                purchase_units: purchase_units,
+                });
+            },
+
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (orderData) {
+
+                // Full available details
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+                
+                });
+            },
+
+            onError: function (err) {
+                console.log(err);
+            }
+            }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+    </script>
+
+  </body>
 </html>
