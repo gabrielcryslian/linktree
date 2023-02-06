@@ -7,9 +7,10 @@ body {
     font-family: 'Raleway', sans-serif;  
     color: #fff;  
     background: rgb(2,0,36);
-    /* background-image: url(./assets/gabriel.jpg); */
+    background-image: url(./assets/gabriel.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
+    background-position-x: left;
 }
 
 .avatar {
