@@ -1,7 +1,7 @@
 const shareData = {
-    title: 'MDN',
-    text: 'Learn web development on MDN!',
-    url: 'https://developer.mozilla.org'
+    title: 'Gabriel Cryslian',
+    text: 'Educação Musical & Produção',
+    url: 'https://gabrielcryslian.github.io/linktree/'
   }
   
   const btn = document.querySelector('button');
