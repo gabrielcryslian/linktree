@@ -17,7 +17,7 @@
     />
     <!-- My styles -->
     <link rel="stylesheet" href="./styles.css" />
-    <!-- My scrips -->
+    <!-- My scripts -->
     <script src="index.js" defer></script>
     <!-- Google tag (gtag.js) -->
     <script
@@ -91,8 +91,8 @@
           </a>
         </li>
         <li>
-          <div id="div-link-tt">
-            <a onclick="toggleTiktok()" id="tag-link-tt">
+          <div id="div-link-tt" onclick="toggleTiktok()">
+            <a id="tag-link-tt">
               Meus vídeos no TikTok
               <span>Vídeos com mais de 300k de visualizações</span>
               <img src="./assets/down.png" alt="" id="btn-tiktok" />
@@ -205,7 +205,6 @@
       <p>Developed by MCode</p>
     </footer>
 
-    <!-- Paypal script -->
     <script
       src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL"
       data-sdk-integration-source="button-factory"
@@ -239,9 +238,23 @@
           invoiceidDiv.style.display = "block";
         }
 
-        var purchase_units = [];
-        purchase_units[0] = {};
-        purchase_units[0].amount = {};
+        var purchase_units = [
+          {
+            amount: {
+              currency_code: "BRL",
+              value: 1,
+              breakdown: { item_total: { currency_code: "BRL", value: 1 } },
+            },
+            items: [
+              {
+                name: "item name",
+                unit_amount: { currency_code: "BRL", value: 1 },
+                quantity: "1",
+                category: "DONATION",
+              },
+            ],
+          },
+        ];
 
         function validate(event) {
           return event.value.length > 0;
@@ -252,7 +265,7 @@
             style: {
               color: "gold",
               shape: "rect",
-              label: "paypal",
+              label: "donate",
               layout: "vertical",
             },
 
@@ -299,6 +312,9 @@
 
               purchase_units[0].description = description.value;
               purchase_units[0].amount.value = amount.value;
+              purchase_units[0].amount.breakdown.item_total.value =
+                amount.value;
+              purchase_units[0].items[0].unit_amount.value = amount.value;
 
               if (invoiceid.value !== "") {
                 purchase_units[0].invoice_id = invoiceid.value;
