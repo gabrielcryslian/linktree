@@ -88,7 +88,8 @@ h2 {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    color: #3e29c2 
+    color: #3e29c2;
+    position: relative;
 }
 
 .link-list li a:hover {
@@ -102,6 +103,36 @@ h2 {
     margin-top: 0.5rem;    
 }
 
+#btn-tiktok {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0.5rem;
+}
+
+#div-link-tt {
+    display: block;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background-color: rgba(195,143,83, 0.75); 
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #3e29c2;
+    position: relative; 
+}
+
+#tiktok-div {
+    display: none;
+}
+
+#tag-link-tt {
+    background-color: transparent;
+    padding: 0 1.2rem;
+}
 /* Styles for the share button */
 .share-btn{
     position: relative;

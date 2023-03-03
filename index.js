@@ -1,31 +1,24 @@
-// const shareData = {
-//     title: 'Gabriel Cryslian',
-//     text: 'Educação Musical & Produção',
-//     url: 'https://gabrielcryslian.github.io/linktree/'
-//   }
-  
-//   const btn = document.querySelector('button');
-//   const resultPara = document.querySelector('.result');
-  
-//   // Share must be triggered by "user activation"
-//   btn.addEventListener('click', async () => {
-//     try {
-//       await navigator.share(shareData);
-//       // resultPara.textContent = 'MDN shared successfully';
-//     } catch (err) {
-//       // resultPara.textContent = `Error: ${err}`;
-//       shareDialog.classList.add('is-open');
-//     } 
-//   });
-
-  function share(){
-    if (navigator.share !== undefined) {
-      navigator.share({
-        title: 'Gabriel Cryslian',
-        text: 'Educação Musical & Produção',
-        url: 'https://gabrielcryslian.github.io/linktree/'
+function share() {
+  if (navigator.share !== undefined) {
+    navigator
+      .share({
+        title: "Gabriel Cryslian",
+        text: "Educação Musical & Produção",
+        url: "https://gabrielcryslian.github.io/linktree/",
       })
-      .then(() => console.log('Successful share'))
-      .catch((error) => console.log('Error sharing', error));
-    }
+      .then(() => console.log("Successful share"))
+      .catch((error) => console.log("Error sharing", error));
   }
+}
+
+const tiktokDiv = document.getElementById("tiktok-div");
+const tagLinkTik = document.getElementById("tag-link-tt");
+const tiktokMainDiv = document.getElementById("div-link-tt");
+
+function toggleTiktok() {
+  if (tiktokDiv.style.display === "none") {
+    tiktokDiv.style.display = "block";
+  } else {
+    tiktokDiv.style.display = "none";
+  }
+}
