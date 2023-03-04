@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Cryslian</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-guitar.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-guitar.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway&display=swap"
       rel="stylesheet"
@@ -17,22 +17,15 @@
     />
     <!-- My styles -->
     <link rel="stylesheet" href="./styles.css" />
-    <!-- My scripts -->
-    <script src="index.js" defer></script>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-F59PGKBCZ7"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F59PGKBCZ7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      gtag("config", "G-F59PGKBCZ7");
-    </script>
+      gtag('config', 'G-F59PGKBCZ7');
+    </script>    
     <!-- Script from tiktok embed -->
     <script async src="https://www.tiktok.com/embed.js"></script>
   </head>
@@ -51,9 +44,7 @@
           </a>
         </li>
         <li>
-          <a
-            href="https://wa.me/5585992206276?text=Ol%C3%A1%2C+quero+aulas+de+m%C3%BAsica%21+%F0%9F%8E%B6%F0%9F%8E%B5%F0%9F%98%84"
-          >
+          <a href="https://wa.me/5585992206276?text=Ol%C3%A1%2C+quero+aulas+de+m%C3%BAsica%21+%F0%9F%8E%B6%F0%9F%8E%B5%F0%9F%98%84">
             <img src="./assets/whatsapp-new.png" alt="whatsapp" />
           </a>
         </li>
@@ -71,9 +62,7 @@
 
       <ul class="link-list">
         <li>
-          <a
-            href="https://wa.me/5585992206276?text=Ol%C3%A1%2C+quero+aulas+de+m%C3%BAsica%21+%F0%9F%8E%B6%F0%9F%8E%B5%F0%9F%98%84"
-          >
+          <a href="https://wa.me/5585992206276?text=Ol%C3%A1%2C+quero+aulas+de+m%C3%BAsica%21+%F0%9F%8E%B6%F0%9F%8E%B5%F0%9F%98%84">
             Agende a sua aula
             <span>Aulas de instrumentos musicais presenciais e online</span>
           </a>
@@ -82,12 +71,6 @@
           <a href="https://www.mymusicsheet.com/gabrielcryslian">
             Tabs e partituras
             <span>Aprenda agora a tocar os meus arranjos</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@GabrielCryslian">
-            Meus vídeos no Youtube
-            <span>Acesse os meus vídeos completos</span>
           </a>
         </li>
         <li>
@@ -116,168 +99,86 @@
             </div>
           </div>
         </li>
+        <li>
+        <li>
+          <a href="https://www.youtube.com/@GabrielCryslian">
+            Meus vídeos no Youtube
+            <span>Acesse os meus vídeos completos</span>
+          </a>
+        </li>
       </ul>
 
       <p style="margin-top: 1.5rem; margin-left: 0.5rem">
         <button class="share-btn" onclick="share()">
-          <i class="bi bi-share-fill"></i>
-        </button>
+        <i class="bi bi-share-fill"></i>
+      </button>
       </p>
       <p class="result"></p>
 
       <!-- Paypal button -->
       <div id="smart-button-container">
-        <div class="paypalItems" style="text-align: center">
-          <label
-            for="description"
-            style="color: #fff; font-weight: bold; margin-top: 2rem"
-            >Envie me um cafézinho! 😉☕ </label
-          ><input
-            type="text"
-            name="descriptionInput"
-            id="description"
-            placeholder="Escreva uma mensagem"
-            maxlength="127"
-            value=""
-          />
-        </div>
-        <p
-          id="descriptionError"
-          style="
-            visibility: hidden;
-            color: red;
-            text-align: center;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-          "
-        >
-          Por favor escreva uma mensagem
-        </p>
-        <div
-          class="paypalItems"
-          style="text-align: center; margin-top: -0.5rem"
-        >
-          <label for="amount">🎸🎼🎵🎹🎤🎶🥁</label
-          ><input
-            name="amountInput"
-            type="number"
-            id="amount"
-            placeholder="Digite um valor"
-            value=""
-          /><span style="color: #fff; font-weight: bold"></span>
-        </div>
-        <p
-          id="priceLabelError"
-          style="
-            visibility: hidden;
-            color: red;
-            text-align: center;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-          "
-        >
-          Por favor insira um valor
-        </p>
-        <div id="invoiceidDiv" style="text-align: center; display: none">
-          <label for="invoiceid"> </label
-          ><input
-            name="invoiceid"
-            maxlength="127"
-            type="text"
-            id="invoiceid"
-            value=""
-          />
-        </div>
-        <p
-          id="invoiceidError"
-          style="visibility: hidden; color: red; text-align: center"
-        >
-          Please enter an Invoice ID
-        </p>
-        <div
-          style="text-align: center; margin-top: 0.625rem"
-          id="paypal-button-container"
-        ></div>
+            <div class="paypalItems" style="text-align: center"><label for="description" style="color:#fff; font-weight: bold; margin-top: 2rem;">Envie me um cafézinho! 😉☕ </label><input type="text" name="descriptionInput" id="description" placeholder="Escreva uma mensagem" maxlength="127" value=""></div>
+            <p id="descriptionError" style="visibility: hidden; color:red; text-align: center; margin-top: 0.5rem; margin-bottom: 0.5rem;">Por favor escreva uma mensagem</p>
+            <div class="paypalItems" style="text-align: center; margin-top: -0.5rem;"><label for="amount">🎸🎼🎵🎹🎤🎶🥁</label><input name="amountInput" type="number" id="amount" placeholder="Digite um valor" value="" ><span style="color:#fff; font-weight: bold;"></span></div>
+            <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center; margin-top: 0.5rem; margin-bottom: 0.5rem;">Por favor insira um valor</p>
+            <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+            <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+            <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
       </div>
+     
     </main>
 
     <footer>
-      <p>Developed by MCode</p>
-    </footer>
+        <p>Developed by MCode</p>
+      </footer>
 
-    <script
-      src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL"
-      data-sdk-integration-source="button-factory"
-    ></script>
+    <script src="index.js"></script>
 
-    <script>
-      function initPayPalButton() {
-        var description = document.querySelector(
-          "#smart-button-container #description"
-        );
-        var amount = document.querySelector("#smart-button-container #amount");
-        var descriptionError = document.querySelector(
-          "#smart-button-container #descriptionError"
-        );
-        var priceError = document.querySelector(
-          "#smart-button-container #priceLabelError"
-        );
-        var invoiceid = document.querySelector(
-          "#smart-button-container #invoiceid"
-        );
-        var invoiceidError = document.querySelector(
-          "#smart-button-container #invoiceidError"
-        );
-        var invoiceidDiv = document.querySelector(
-          "#smart-button-container #invoiceidDiv"
-        );
+    <!-- Paypal script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>   
 
-        var elArr = [description, amount];
-
-        if (invoiceidDiv.firstChild.innerHTML.length > 1) {
-          invoiceidDiv.style.display = "block";
-        }
-
-        var purchase_units = [
-          {
-            amount: {
-              currency_code: "BRL",
-              value: 1,
-              breakdown: { item_total: { currency_code: "BRL", value: 1 } },
-            },
-            items: [
-              {
-                name: "item name",
-                unit_amount: { currency_code: "BRL", value: 1 },
-                quantity: "1",
-                category: "DONATION",
-              },
-            ],
-          },
-        ];
-
-        function validate(event) {
-          return event.value.length > 0;
-        }
-
-        paypal
-          .Buttons({
+      <script>
+        function initPayPalButton() {
+          var description = document.querySelector('#smart-button-container #description');
+          var amount = document.querySelector('#smart-button-container #amount');
+          var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+          var priceError = document.querySelector('#smart-button-container #priceLabelError');
+          var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+          var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+          var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+      
+          var elArr = [description, amount];
+      
+          if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+            invoiceidDiv.style.display = "block";
+          }
+      
+          var purchase_units = [];
+          purchase_units[0] = {};
+          purchase_units[0].amount = {};
+      
+          function validate(event) {
+            return event.value.length > 0;
+          }
+      
+          paypal.Buttons({
             style: {
-              color: "gold",
-              shape: "rect",
-              label: "donate",
-              layout: "vertical",
+              color: 'gold',
+              shape: 'rect',
+              label: 'paypal',
+              layout: 'vertical',
+              
             },
-
+      
             onInit: function (data, actions) {
               actions.disable();
-
-              if (invoiceidDiv.style.display === "block") {
+      
+              if(invoiceidDiv.style.display === "block") {
                 elArr.push(invoiceid);
               }
-
+      
               elArr.forEach(function (item) {
-                item.addEventListener("keyup", function (event) {
+                item.addEventListener('keyup', function (event) {
                   var result = elArr.every(validate);
                   if (result) {
                     actions.enable();
@@ -287,73 +188,62 @@
                 });
               });
             },
-
+      
             onClick: function () {
               if (description.value.length < 1) {
                 descriptionError.style.visibility = "visible";
               } else {
                 descriptionError.style.visibility = "hidden";
               }
-
+      
               if (amount.value.length < 1) {
                 priceError.style.visibility = "visible";
               } else {
                 priceError.style.visibility = "hidden";
               }
-
-              if (
-                invoiceid.value.length < 1 &&
-                invoiceidDiv.style.display === "block"
-              ) {
+      
+              if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
                 invoiceidError.style.visibility = "visible";
               } else {
                 invoiceidError.style.visibility = "hidden";
               }
-
+      
               purchase_units[0].description = description.value;
               purchase_units[0].amount.value = amount.value;
-              purchase_units[0].amount.breakdown.item_total.value =
-                amount.value;
-              purchase_units[0].items[0].unit_amount.value = amount.value;
-
-              if (invoiceid.value !== "") {
+      
+              if(invoiceid.value !== '') {
                 purchase_units[0].invoice_id = invoiceid.value;
               }
             },
-
+      
             createOrder: function (data, actions) {
               return actions.order.create({
                 purchase_units: purchase_units,
               });
             },
-
+      
             onApprove: function (data, actions) {
               return actions.order.capture().then(function (orderData) {
+      
                 // Full available details
-                console.log(
-                  "Capture result",
-                  orderData,
-                  JSON.stringify(orderData, null, 2)
-                );
-
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+      
                 // Show a success message within this page, e.g.
-                const element = document.getElementById(
-                  "paypal-button-container"
-                );
-                element.innerHTML = "";
-                element.innerHTML = "<h3>Thank you for your payment!</h3>";
-
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+      
                 // Or go to another URL:  actions.redirect('thank_you.html');
+                
               });
             },
-
+      
             onError: function (err) {
               console.log(err);
-            },
-          })
-          .render("#paypal-button-container");
-      }
-      initPayPalButton();
+            }
+          }).render('#paypal-button-container');
+        }
+        initPayPalButton();
     </script>
   </body>
-</html>
+</html>  
