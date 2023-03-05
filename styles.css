@@ -25,7 +25,8 @@ body {
         background-image: url(./assets/gabriel.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: left;    
+        background-position-x: left;
+        background: fixed;
     }
 }
 
