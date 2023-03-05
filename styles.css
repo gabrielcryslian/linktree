@@ -26,7 +26,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: left;
-        background: fixed;
+        background-attachment: fixed;
     }
 }
 
