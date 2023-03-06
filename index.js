@@ -11,10 +11,12 @@
     }
   }
 
-  // This is the function about the tiktok embed link
-  const tiktokDiv = document.getElementById("tiktok-div");
-  
+  const divTiktok = document.getElementById('tiktok-div')
+  divTiktok.style.display = 'none'
+
+  // This is the function about the tiktok embed link 
   function toggleTiktok() {
+    const tiktokDiv = document.getElementById("tiktok-div");
     if (tiktokDiv.style.display === "none") {
       tiktokDiv.style.display = "block";
     } else {
