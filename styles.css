@@ -7,10 +7,10 @@ body {
     font-family: 'Raleway', sans-serif;  
     color: #fff;  
     background: black;
-    background-image: url(./assets/gabriel.jpg);
+    background-image: url(./assets/gabriel-recortada.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position-x: -85%;
+    background-position-x: left;
     background-attachment: fixed;
 }
 
@@ -21,14 +21,6 @@ body {
     .container {
         margin-top: 30px;
     }
-
-    /* body {
-        background-image: url(./assets/gabriel-recortada.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: left;
-        background-attachment: fixed;
-    } */
 }
 
 
@@ -90,8 +82,7 @@ h2 {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    color: #3e29c2;
-    position: relative;
+    color: #3e29c2 
 }
 
 .link-list li a:hover {
@@ -127,14 +118,11 @@ h2 {
     position: relative; 
 }
 
-/* #tiktok-div {
-    display: none;
-} */
-
 #tag-link-tt {
     background-color: transparent;
     padding: 0 1.2rem;
 }
+
 /* Styles for the share button */
 .share-btn{
     position: relative;

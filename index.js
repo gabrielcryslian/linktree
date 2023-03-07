@@ -1,4 +1,3 @@
-// This is the share function
   function share(){
     if (navigator.share !== undefined) {
       navigator.share({
