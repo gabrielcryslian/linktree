@@ -7,10 +7,11 @@ body {
     font-family: 'Raleway', sans-serif;  
     color: #fff;  
     background: black;
-    background-image: url(./assets/gabriel-recortada.jpg);
+    background-image: url(./assets/gabriel.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position-x: left;
+    background-position-x: -85%;
+    background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
@@ -21,13 +22,13 @@ body {
         margin-top: 30px;
     }
 
-    body {
+    /* body {
         background-image: url(./assets/gabriel-recortada.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: left;
         background-attachment: fixed;
-    }
+    } */
 }
 
 
