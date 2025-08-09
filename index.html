@@ -44,7 +44,7 @@
       <!-- Profile -->
       <div class="text-center mb-6">
         <img
-          src="./assets/ago-25-gabriel.png"
+          src="./assets/ago-25-recorte.png"
           alt="Foto de Gabriel"
           class="w-32 h-32 rounded-full mx-auto shadow-md"
         />
@@ -90,7 +90,7 @@
       </ul>
 
       <!-- Links -->
-      <ul class="w-full max-w-md space-y-4">
+      <ul class="w-full max-w-md space-y-4 text-center">
         <!-- Agende a sua aula -->
         <li>
           <a
@@ -152,12 +152,20 @@
             class="block bg-white shadow rounded-xl p-4 cursor-pointer hover:bg-purple-50 transition"
             onclick="toggleTiktok()"
           >
-            <a id="tag-link-tt" class="flex items-center justify-between">
-              <div>
+            <a
+              id="tag-link-tt"
+              class="flex flex-col items-center justify-center"
+            >
+              <div class="text-center">
                 <span class="font-semibold text-lg">Meus vídeos no TikTok</span>
                 <p class="text-sm text-gray-500">Mais de 1M de visualizações</p>
               </div>
-              <img src="./assets/down.png" alt="" class="w-5" id="btn-tiktok" />
+              <img
+                src="./assets/down.png"
+                alt=""
+                class="w-5 mt-2"
+                id="btn-tiktok"
+              />
             </a>
             <div id="tiktok-div" class="hidden mt-4">
               <blockquote
@@ -192,7 +200,7 @@
       </ul>
 
       <!-- Share Button -->
-      <div class="mt-6">
+      <div class="mt-6 text-center">
         <button
           class="bg-blue-500 text-white p-3 rounded-full shadow hover:bg-blue-600 transition"
           onclick="share()"
@@ -201,7 +209,7 @@
         </button>
       </div>
 
-      <p class="result mt-2 text-sm text-gray-600"></p>
+      <p class="result mt-2 text-sm text-gray-600 text-center"></p>
     </main>
 
     <footer class="text-center py-4 text-gray-500 text-sm">
